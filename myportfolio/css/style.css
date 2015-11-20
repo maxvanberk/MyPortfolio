@@ -1,0 +1,27 @@
+body{
+  font-family: 'Lato', sans-serif;
+  color: #747704;
+  font-weight: 300;
+}
+
+.mynametext{
+  font-size: 70px;
+  font-weight: 100;
+}
+
+.titleimg{
+  margin-top: 10px;
+  border-color: #f8981c;
+  border-width: 4px;
+  border-style: solid;
+}
+
+.text-muted{
+  color: #bcbbbb;
+}
+
+hr{
+  border-color: #bcbbbb;
+  border-width: 3px;
+
+}
