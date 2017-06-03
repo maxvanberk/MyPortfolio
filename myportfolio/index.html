@@ -1,114 +1,116 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <title>Portfolio Test Page</title>
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+	  <title>Portfolio Page</title>
 
-  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/style.css">
+	  <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+	</head>
+	  <body>
+		<div class="container">
+		<header class="row">
+		  <div class="col-md-6">
+			 <img class="img-circle img-responsive titleimg" src="http://lorempixel.com/100/100/cats" alt="my logo">
+		  </div>
+		  <div class="col-md-6 text-right text-uppercase">
+			<h1 class="mynametext" >Max van Berk</h1>
+			<h4>Front-end jedi</h4>
+		  </div>
+		</header>
+		<main>
+			<div class="row">
+			  <div class="col-md-12">
+				<hr>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-md-12">
+			   <img class="img-responsive img-rounded" src="http://lorempixel.com/1140/350/abstract" alt="my big picture">
+			</div>
+			</div>
+			<div class="row">
+			  <div class="col-md-12 text-muted" >
+				<h2>Featured Work</h2>
+			  </div>
+			</div>
+			<div class="row text-center">
+			  <div class="col-md-4">
+				<img class="img-responsive img-rounded" src="http://lorempixel.com/555/300/cats" alt="my cat project" data-toggle="modal" data-target="#catproject">
+				<h3>cat project</h3>
+				<p>First Link Placeholder</p>
+			  </div>
+			  <div class="col-md-4">
+				<img class="img-responsive img-rounded" src="http://lorempixel.com/555/300/technics" alt="my technics project" data-toggle="modal" data-target="#tecproject">
+				<h3>technics project</h3>
+				<p>Second Link Placeholder</p>
+			  </div>
+			  <div class="col-md-4">
+			  <img class="img-responsive img-rounded" src="http://lorempixel.com/555/300/sports" alt="my sports project" data-toggle="modal" data-target="#sportsproject">
+				<h3>sports project</h3>
+				<p>Third Link Placeholder</p>
+			  </div>
 
-</head>
-  <body>
-    <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-         <img class="img-circle img-responsive titleimg" src="http://lorempixel.com/100/100/cats" alt="my logo">
-       </div>
-      <div class="col-md-6 text-right text-uppercase">
-        <h1 class="mynametext" >Max van Berk</h1>
-        <h4>Front-end jedi</h4>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <hr>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-       <img class="img-responsive img-rounded" src="http://lorempixel.com/1140/350/abstract" alt="my big picture">
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 text-muted" >
-        <h2>Featured Work</h2>
-      </div>
-    </div>
-    <div class="row text-center">
-      <div class="col-md-4">
-        <img class="img-responsive img-rounded" src="http://lorempixel.com/555/300/cats" alt="my cat project" data-toggle="modal" data-target="#catproject">
-        <h3>cat project</h3>
-        <p>First Link Placeholder</p>
-      </div>
-      <div class="col-md-4">
-        <img class="img-responsive img-rounded" src="http://lorempixel.com/555/300/technics" alt="my technics project" data-toggle="modal" data-target="#tecproject">
-        <h3>technics project</h3>
-        <p>Second Link Placeholder</p>
-      </div>
-      <div class="col-md-4">
-      <img class="img-responsive img-rounded" src="http://lorempixel.com/555/300/sports" alt="my sports project" data-toggle="modal" data-target="#sportsproject">
-        <h3>sports project</h3>
-        <p>Third Link Placeholder</p>
-      </div>
+			</div>
+		  </div>
+		  <!-- Cats Modal -->
+		  <div class="modal fade" id="catproject" tabindex="-1" role="dialog" aria-labelledby="myCatLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h4 class="modal-title" id="myCatLabel">Favorite Cat Page</h4>
+				</div>
+				<div class="modal-body">
+				  <img class="img-responsive" src="http://lorempixel.com/555/300/cats" alt="my cat image">
+				  This was my first project in this class. I learned a lot about HTML and CSS. Oh and cats...
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- Technics Modal -->
+		  <div class="modal fade" id="tecproject" tabindex="-1" role="dialog" aria-labelledby="myTechnicsLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h4 class="modal-title" id="myTechnicsLabel">Favorite Technics Page</h4>
+				</div>
+				<div class="modal-body">
+				  <img class="img-responsive" src="http://lorempixel.com/555/300/technics" alt="my technics project">
+				  This was my second project in this class. I learned a lot about HTML and CSS. Oh and technics...
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- Sports Modal -->
+		  <div class="modal fade" id="sportsproject" tabindex="-1" role="dialog" aria-labelledby="mySportsLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h4 class="modal-title" id="mySportsLabel">Favorite Sports Page</h4>
+				</div>
+				<div class="modal-body">
+				  <img class="img-responsive" src="http://lorempixel.com/555/300/sports" alt="my sports project">
+				  This was my third project in this class. I learned a lot about HTML and CSS. Oh and sports...
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</main>
 
-    </div>
-  </div>
-  <!-- Cats Modal -->
-  <div class="modal fade" id="catproject" tabindex="-1" role="dialog" aria-labelledby="myCatLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="myCatLabel">Favorite Cat Page</h4>
-        </div>
-        <div class="modal-body">
-          <img class="img-responsive" src="http://lorempixel.com/555/300/cats" alt="my cat image">
-          This was my first project in this class. I learned a lot about HTML and CSS. Oh and cats...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Technics Modal -->
-  <div class="modal fade" id="tecproject" tabindex="-1" role="dialog" aria-labelledby="myTechnicsLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="myTechnicsLabel">Favorite Technics Page</h4>
-        </div>
-        <div class="modal-body">
-          <img class="img-responsive" src="http://lorempixel.com/555/300/technics" alt="my technics project">
-          This was my second project in this class. I learned a lot about HTML and CSS. Oh and technics...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Sports Modal -->
-  <div class="modal fade" id="sportsproject" tabindex="-1" role="dialog" aria-labelledby="mySportsLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="mySportsLabel">Favorite Sports Page</h4>
-        </div>
-        <div class="modal-body">
-          <img class="img-responsive" src="http://lorempixel.com/555/300/sports" alt="my sports project">
-          This was my third project in this class. I learned a lot about HTML and CSS. Oh and sports...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</body></html>
+	  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>
